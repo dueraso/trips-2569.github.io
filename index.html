@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ทริปแม่ฮ่องสอน–เชียงใหม่ | 24 ธ.ค. – 3 ม.ค.</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/react@18.3.1/umd/react.production.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/htm@3.1.1/dist/htm.umd.js"></script>
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--bg:#f2f7f4;--cd:#fff;--tx:#14281e;--mu:#5a6e62;--bd:#d6e3db;--g:#059669}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0e1813;--cd:#17251d;--tx:#e8f3ec;--mu:#9db1a5;--bd:#294034}}
+:root[data-theme=dark]{--bg:#0e1813;--cd:#17251d;--tx:#e8f3ec;--mu:#9db1a5;--bd:#294034}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.55 'Noto Sans Thai',system-ui,sans-serif}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:50;background:var(--bg)}
+a{color:inherit}
+.hero{background:linear-gradient(135deg,#064e3b,#059669);color:#fff;padding:1.4rem 1rem 1.2rem}
+.in{max-width:62rem;margin:0 auto}
+.eb{font-size:.8rem;opacity:.85}
+h1{margin:.2rem 0 .7rem;font-size:1.55rem;line-height:1.3}
+.chips{display:flex;flex-wrap:wrap;gap:.4rem}
+.chips span{background:rgba(255,255,255,.18);padding:.2rem .7rem;border-radius:999px;font-size:.8rem}
+.wrap{max-width:62rem;margin:0 auto}
+.nav{display:flex;gap:.5rem;overflow-x:auto;padding:.6rem 1rem;position:sticky;top:env(safe-area-inset-top,0px);z-index:40;background:var(--bg);border-bottom:1px solid var(--bd);scrollbar-width:none}
+.nav::-webkit-scrollbar{display:none}
+.nb{flex:none;text-align:center;padding:.4rem .8rem;border-radius:.9rem;border:1px solid var(--bd);background:var(--cd);color:var(--tx);font:inherit;font-size:.78rem;line-height:1.25;cursor:pointer}
+.nb b{display:block;font-size:1.1rem}
+.nb.on{background:var(--g);border-color:var(--g);color:#fff}
+.lb small{display:none}
+main{padding:1rem 1rem 3rem;min-width:0}
+h2{font-size:1.3rem;margin:.2rem 0 0;line-height:1.35}
+.sub{color:var(--mu);font-size:.9rem;margin:0 0 .9rem}
+.stop{background:var(--cd);border:1px solid var(--bd);border-left:5px solid var(--c);border-radius:1rem;padding:.9rem 1rem;margin-bottom:.8rem}
+.tm{font-size:.8rem;color:var(--mu);font-weight:600}
+.stop h3{margin:.15rem 0 .2rem;font-size:1.05rem;line-height:1.4}
+.nt{margin:0;font-size:.92rem}
+.pl{display:flex;align-items:center;justify-content:space-between;gap:.5rem .8rem;flex-wrap:wrap;padding:.6rem 0 0;margin-top:.6rem;border-top:1px dashed var(--bd)}
+.pn{flex:1 1 13rem;min-width:0;font-weight:600;font-size:.92rem}
+.pn small{display:block;font-weight:400;color:var(--mu);font-size:.78rem}
+.bs{display:flex;gap:.4rem}
+.bt{display:inline-flex;align-items:center;gap:.25rem;padding:.45rem .8rem;border-radius:.7rem;font:inherit;font-size:.8rem;font-weight:600;border:1px solid var(--bd);background:var(--cd);color:var(--tx);text-decoration:none;cursor:pointer}
+.bt.m{background:var(--g);border-color:var(--g);color:#fff}
+.sl{border-radius:1rem;padding:.8rem 1rem;font-weight:600;background:color-mix(in srgb,var(--c) 15%,var(--cd));border:1px solid color-mix(in srgb,var(--c) 45%,transparent)}
+.pg{display:flex;justify-content:space-between;margin-top:1rem}
+.row{display:flex;align-items:center;gap:.8rem;width:100%;text-align:left;background:var(--cd);color:var(--tx);border:1px solid var(--bd);border-left:5px solid var(--c);border-radius:1rem;padding:.7rem .9rem;margin-bottom:.55rem;font:inherit;cursor:pointer}
+.dn{flex:none;width:3.4rem;text-align:center;line-height:1.2;font-size:.75rem;color:var(--mu)}
+.dn b{display:block;font-size:1.35rem;color:var(--tx)}
+.rt{flex:1;min-width:0}.rt b{display:block;line-height:1.35}.rt small{color:var(--mu)}
+.ck{background:var(--cd);border:1px solid var(--bd);border-radius:1rem;padding:.9rem 1rem;margin-top:1rem}
+.ck h3{margin:0 0 .3rem}.ck ul{margin:0;padding-left:1.2rem;font-size:.92rem}.ck li{margin:.35rem 0}
+.ft{margin-top:1.4rem;font-size:.78rem;color:var(--mu)}
+@media(min-width:820px){
+ .wrap{display:grid;grid-template-columns:15.5rem 1fr;gap:1.2rem;padding:0 1rem}
+ .nav{flex-direction:column;overflow:visible;align-self:start;top:1rem;padding:1rem 0;border:0;background:none;z-index:1;gap:.4rem}
+ .nb{display:flex;align-items:center;gap:.7rem;text-align:left;padding:.5rem .8rem}
+ .nb b{display:inline;min-width:2rem;text-align:center;font-size:1.25rem}
+ .lb small{display:block;opacity:.8;font-size:.74rem}
+ main{padding:1.2rem 0 3rem}
+}
+</style>
+</head>
+<body>
+<header class="hero"><div class="in">
+ <div class="eb">ทริปครอบครัว · ยะลา → แม่ฮ่องสอน → เชียงใหม่</div>
+ <h1>ทริปแม่ฮ่องสอน–เชียงใหม่<br>มุสลิมฟรีกางเต็นท์</h1>
+ <div class="chips"><span>📅 24 ธ.ค. 69 – 3 ม.ค. 70</span><span>👨‍👩‍👧‍👦 6-8 คน</span><span>⛺ กางเต็นท์ 5 คืน</span><span>🏨 โรงแรม 1 คืน</span><span>🕌 ฮาลาล / มัสยิด</span></div>
+</div></header>
+<div id="app"></div>
+<script>
+const {useState,useEffect}=React, html=htm.bind(React.createElement), e=encodeURIComponent;
+const mo=d=>d>=24?'ธ.ค.':'ม.ค.', yr=d=>d>=24?69:70;
+const K={t:['🚆','#64748b'],c:['⛺','#e0a100'],h:['🕌','#0d9488'],o:['🏨','#3b82f6'],g:['📍','#10b981']};
+const PI={v:'📍',f:'🍽️',m:'🕌',c:'⛺',h:'🏨',s:'🚗'};
+// [ประเภท, ชื่อ, Google place_id / cid / คำค้น, โทร] — ข้อมูลจาก Google Maps (7 พ.ย. 69)
+const P={
+st:['s','สถานีรถไฟเชียงใหม่','ChIJAQDAQFQl2jARC_6rhGdE9wY',''],
+yl:['s','สถานีรถไฟยะลา','ChIJ70GhxEt0szERwzUoiC9K1_c',''],
+kb:['s','สถานีกลางกรุงเทพอภิวัฒน์','ChIJg2spMwCd4jARNbZsBWhI97M',''],
+ms:['f','ร้านอิสลามแม่แซะ (Maesae Islam)','ChIJEx97rnR62jARrBb-dsDZR_8','080-129-9225'],
+js:['f','ข้าวซอยเจ๊ซิง (ฮาลาล)','ChIJOddgl3R62jAR3LTMLg_G6rQ','061-593-2415'],
+hn:['c','อุทยานแห่งชาติห้วยน้ำดัง (ลานกางเต็นท์)','ChIJI6eS9mR52jAR4LCr3rIAAR0','063-643-1744'],
+kl:['v','จุดชมวิวดอยกิ่วลม','ChIJUz7QxBx52jAR20FEA8-h_Nk',''],
+br:['v','สะพานประวัติศาสตร์ท่าปาย','2021666601449072026',''],
+pm:['m','มัสยิดอัล-อิสรออฺ ปาย','ChIJAQAAAOyB2jARBY-waY4UD8A','053-699-290'],
+py:['f','Halal Yunnan Cuisine (บะหมี่ไข่ยูนนาน)','ChIJsWxJqTKA2jAREUYXgAqV8Ck',''],
+mh:['f','Mu’min Halal Food','ChIJyfCNxtuB2jARPjv0jFfxwh4','088-759-2490'],
+tl:['v','ถ้ำน้ำลอด','7648332168393522810',''],
+pu:['c','ปางอุ๋ง (โครงการพระราชดำริปางตอง 2)','ChIJY-isEi8E0DAR4lfpf_Vnxyc','084-365-0776'],
+sb:['v','สะพานซูตองเป้','11409257252277471671',''],
+mm:['m','มัสยิดแม่ฮ่องสอน','ChIJr7xB5gWm2jARRcRwSnKlYRE','081-961-4675'],
+mi:['f','ร้านอาหารอิสลามแม่ฮ่องสอน','ChIJFSlN4QWm2jAR5EuFqdOPyoM','088-562-2396'],
+dk:['v','วัดพระธาตุดอยกองมู (จุดชมวิว)','ChIJq6qqqvGl2jAR0PEbT9c8BMo',''],
+wh:['f','White House Coffee & Garage (ฮาลาล)','ChIJ5XbwF4MJ0DAR6cB7SYMvoho','095-763-8784'],
+rt:['v','หมู่บ้านรักไทย','14364027471318043574',''],
+c1:['c','ลานกางเต็นท์ บ้านรักไทย ริมไผ่โฮม','ChIJ_wIAUwAb0DARmYWkzKoZLng','082-132-6419'],
+c2:['c','ลานกางเต็นท์ บ้านรักไทย วิวสามหมอก','ChIJJ9f-IQAb0DARXdhc2hJFzJI','083-759-1252'],
+c3:['c','รักไทยแคมป์','ChIJxd999Ewb0DAR8z6gpSBcrIs','094-873-8851'],
+ml:['v','โครงการหลวงแม่ลาน้อย','3227440306132044658',''],
+ob:['v','อุทยานแห่งชาติออบหลวง','14545229676759503482',''],
+di:['v','อุทยานแห่งชาติดอยอินทนนท์','6506307997624117083',''],
+dc:['c','Dong Son Tent Area (ลานกางเต็นท์ดอยอินทนนท์)','ChIJy3J9AtWr2zARQvCIWwBe1fc','053-286-729'],
+bz:['f','Bangyazeen Restaurant (ฮาลาล)','ChIJjw72GH6x2zARZhlYG2PvqrY','092-871-3410'],
+kp:['v','กิ่วแม่ปาน','กิ่วแม่ปาน ดอยอินทนนท์',''],
+ks:['f','ข้าวซอยอิสลาม (Khao Soi Islam)','ChIJbS_S9XQ72jARcnTlrzd0GWo','089-874-2498'],
+mb:['m','มัสยิดบ้านฮ่อ (Hidayatul Islam)','ChIJt6w--6U62jARsqrefz9Pe6o',''],
+nm:['v','วัน นิมมาน','4570020610368323511',''],
+dp:['c','ลานกางเต็นท์ดอยปุย','ChIJ5ZFwqKU52jAR6YpWtgLNkvQ','053-210-244'],
+tp:['v','ประตูท่าแพ','ChIJdcghNKI62jAR9iY55KuPO50',''],
+dt:['h','ห้องพักดารุตตักวา (ข้างมัสยิดอัตตักวา)','ChIJo_qnA7I62jARZoI_9HENILw','081-030-7549'],
+hm:['h','Hotel M Chiang Mai','ChIJHSUTk5s62jARfNe1YlCRbNc','053-211-069'],
+ih:['h','Imm Hotel Tha Phae','ChIJ684DeqA62jARBucExO5K1P0','053-283-999'],
+am:['h','Amora Hotel Chiang Mai','ChIJfy9mocY5UDARufxfjeHOWIA','053-251-531'],
+sv:['s','ค้นหาร้านของฝากในเชียงใหม่','ของฝาก เชียงใหม่','']};
+const link=([,n,r])=>/^ChIJ/.test(r)?'https://www.google.com/maps/search/?api=1&query='+e(n)+'&query_place_id='+r:/^\d+$/.test(r)?'https://maps.google.com/?cid='+r:'https://www.google.com/maps/search/?api=1&query='+e(r);
+// [เวลา, ชื่อ, หมายเหตุ, ขับ, ชนิด, [[สถานที่, เวลาเปิด, หมายเหตุ]]]
+const DAYS=[
+{d:24,w:'พฤ.',t:'ยะลา → กรุงเทพฯ',sl:['t','นอนบนรถไฟ / รถทัวร์ VIP'],s:[
+['14:00','ออกเดินทางจากยะลา','ขึ้นรถไฟหรือรถทัวร์ VIP มุ่งหน้ากรุงเทพฯ','1,050 กม. · 16-18 ชม.','t',[['yl']]]]},
+{d:25,w:'ศ.',t:'กรุงเทพฯ → เชียงใหม่ (รถไฟนอน)',sl:['t','นอนบนรถไฟนอน CNR (ขบวน 9)'],s:[
+['เช้า','ถึงกรุงเทพฯ พักผ่อน & ทานมื้อเย็น','พักผ่อนใน กทม. ทานมื้อเย็น ก่อนขึ้นรถไฟนอน','','t',[['kb']]],
+['18:40','ขึ้นรถไฟนอน CNR ขบวน 9 → เชียงใหม่','ออกจากสถานีกลางกรุงเทพอภิวัฒน์ 18:40 ถึงเชียงใหม่ราว 07:15 ของวันที่ 26','750 กม. · 12.5 ชม.','t',[['kb']]]]},
+{d:26,w:'ส.',t:'เชียงใหม่ → ห้วยน้ำดัง',sl:['c','นอนเต็นท์ คืนที่ 1 · ห้วยน้ำดัง'],s:[
+['07:15','รับรถเช่าที่เชียงใหม่','รถตู้ Commuter/Ventury สำหรับ 6-8 คน','','g',[['st']]],
+['08:30','กินข้าวเที่ยงฮาลาลที่แม่แตง','ร้านฮาลาลริมทางสายเชียงใหม่–ปาย','55 กม. · 1 ชม.','h',[['ms','07:00–19:00'],['js','07:00–18:00']]],
+['11:30','ขึ้นดอย กางเต็นท์ที่ห้วยน้ำดัง (ดอยกิ่วลม)','ตั้งแคมป์ สัมผัสอากาศหนาว ชมวิวพระธาตุและทะเลหมอก','55 กม. · 1.5 ชม.','c',[['hn','06:00–18:00','ไปให้ถึงก่อนอุทยานปิด'],['kl','24 ชม.']]]]},
+{d:27,w:'อา.',t:'ปาย → ปางอุ๋ง',sl:['c','นอนเต็นท์ คืนที่ 2 · ปางอุ๋ง'],s:[
+['08:00','สะพานประวัติศาสตร์ท่าปาย','ถ่ายรูปโครงเหล็กสะพานโบราณข้ามแม่น้ำปาย','35 กม. · 45 นาที','g',[['br']]],
+['09:00','ปาย: ละหมาด & ข้าวเที่ยงฮาลาล','แวะละหมาดและทานมื้อเที่ยงร้านมุสลิม','10 กม. · 15 นาที','h',[['pm','24 ชม.'],['py','06:00–22:00'],['mh','08:00–21:00']]],
+['11:30','ถ้ำน้ำลอด นั่งแพไม้ไผ่','นั่งแพไม้ไผ่พร้อมไกด์ท้องถิ่น ชมหินงอกหินย้อย','48 กม. · 1 ชม.','g',[['tl']]],
+['14:30','เข้าลานกางเต็นท์ปางอุ๋ง','กางเต็นท์ใต้ทิวสนริมอ่างเก็บน้ำ ชมสายหมอก','60 กม. · 1.5 ชม.','c',[['pu','24 ชม.']]]]},
+{d:28,w:'จ.',t:'แม่ฮ่องสอน → บ้านรักไทย',sl:['c','นอนเต็นท์/โฮมสเตย์ คืนที่ 3 · บ้านรักไทย'],s:[
+['06:30','นั่งแพหมอกยามเช้า ปางอุ๋ง','ล่องแพไม้ไผ่ชมสายหมอกและแสงอาทิตย์กระทบผิวน้ำ','','g',[['pu','24 ชม.']]],
+['09:00','สะพานซูตองเป้','สะพานไม้ไผ่ยาวข้ามทุ่งนา','35 กม. · 50 นาที','g',[['sb']]],
+['10:00','เมืองแม่ฮ่องสอน: ละหมาด ข้าวเที่ยง ดอยกองมู','ละหมาด ทานฮาลาล แล้วขึ้นชมวิวเมืองจากดอยกองมู','12 กม. · 20 นาที','h',[['mm'],['mi','09:00–17:00','เดินจากมัสยิดราว 1 นาที (ตามรีวิว)'],['dk','05:00–21:00']]],
+['14:30','ขึ้นหมู่บ้านรักไทย','หมู่บ้านยูนนาน จิบชา ชมโคมไฟแดงยามค่ำ · ลานกางเต็นท์มี 3 ที่ให้เลือก โทรถามคิวช่วงปีใหม่ก่อน','44 กม. · 1.25 ชม.','c',[['rt'],['wh','','ร้านฮาลาลระหว่างทางขึ้นบ้านรักไทย'],['c1','06:00–21:00'],['c2','06:00–24:00'],['c3']]]]},
+{d:29,w:'อ.',t:'แม่ลาน้อย → ออบหลวง → อินทนนท์',sl:['c','นอนเต็นท์ คืนที่ 4 · ดอยอินทนนท์'],s:[
+['07:00','จิบชายามเช้า บ้านรักไทย','สัมผัสอากาศหนาว จิบชาอุ่นๆ ริมอ่างเก็บน้ำ','','g',[['rt']]],
+['09:00','โครงการหลวงแม่ลาน้อย','ชมนาขั้นบันไดและแปลงเกษตรโครงการหลวง','125 กม. · 2.5 ชม.','g',[['ml']]],
+['11:30','อุทยานแห่งชาติออบหลวง','เดินชมสะพานแขวนและช่องแคบโตรกผาแม่น้ำแจ่ม','100 กม. · 2 ชม.','g',[['ob']]],
+['14:30','ขึ้นดอยอินทนนท์ กางเต็นท์','ยอดดอยสูงที่สุดในไทย อากาศหนาวจัด','55 กม. · 1.25 ชม.','c',[['di'],['dc','24 ชม.'],['bz','09:00–20:00','ร้านฮาลาลแถวจอมทอง กินก่อนขึ้นดอย']]]]},
+{d:30,w:'พ.',t:'อินทนนท์ → เชียงใหม่ → ดอยปุย',sl:['c','นอนเต็นท์ คืนที่ 5 · ดอยปุย'],s:[
+['06:00','กิ่วแม่ปาน & ยอดดอยอินทนนท์','เดินศึกษาธรรมชาติ สูดอากาศเช้า ชมทะเลหมอก','','g',[['kp']]],
+['10:00','ลงดอย กินข้าวซอยฮาลาลย่านบ้านฮ่อ','ร้านข้าวซอยปิด 17:00 ไปให้ทันมื้อเที่ยง อยู่ใกล้มัสยิดบ้านฮ่อ','90 กม. · 1.75 ชม.','h',[['ks','07:30–17:00'],['mb']]],
+['13:00','วัน นิมมาน & ย่านนิมมาน','เดินช้อปปิ้ง ถ่ายรูปอาคารอิฐแดง คาเฟ่','10 กม. · 20 นาที','g',[['nm']]],
+['15:30','ขึ้นลานกางเต็นท์ดอยปุย','นอนใต้ทิวสน ชมไฟเมืองเชียงใหม่ยามค่ำ','28 กม. · 45 นาที','c',[['dp']]]]},
+{d:31,w:'พฤ.',t:'ท่าแพ & เคาท์ดาวน์',sl:['o','นอนโรงแรม · เชียงใหม่ (คืนเดียวของทริป)'],s:[
+['09:00','ถ่ายรูปประตูท่าแพ','กำแพงเมืองเก่าและฝูงนกพิราบ','28 กม. · 45 นาที','g',[['tp','24 ชม.']]],
+['12:00','เช็กอินโรงแรม','ยังไม่ได้เลือกโรงแรม นี่คือตัวเลือกใกล้ประตูท่าแพ (ยังไม่ได้เช็กราคาและห้องว่าง)','','o',[['dt','','ข้างมัสยิด ใกล้ร้านฮาลาล รีวิวว่ามีห้อง 4-6 คน'],['hm','','อยู่ข้างประตูท่าแพ'],['ih','','ถนนโคตรสาร ใกล้ท่าแพ'],['am','','เดินถึงท่าแพได้']]],
+['19:00','เคาท์ดาวน์ส่งท้ายปี','ปีที่แล้วจัดที่ข่วงประตูท่าแพและสะพานนวรัฐ ปีนี้ยังไม่พบประกาศที่ยืนยันได้ เช็กอีกครั้งใกล้วัน','','g',[['tp']]]]},
+{d:1,w:'ศ.',t:'ของฝาก & คืนรถเช่า → กลับกรุงเทพฯ',sl:['t','นอนบนรถไฟนอน / รถทัวร์ VIP'],s:[
+['09:00','ซื้อของฝาก & คืนรถเช่า','ซื้อของฝาก ทานมื้อเที่ยง แล้วนำรถเช่าไปคืนตามจุดที่นัดกับบริษัท','','g',[['sv']]],
+['15:00','เชียงใหม่ → กรุงเทพฯ','นั่งรถไฟนอนหรือรถทัวร์ VIP กลับกรุงเทพฯ','750 กม. · 11-12 ชม.','t',[['st']]]]},
+{d:2,w:'ส.',t:'กรุงเทพฯ → ยะลา',sl:['t','นอนบนรถไฟนอน / รถทัวร์ VIP'],s:[
+['06:00 เป็นต้นไป','ถึงกรุงเทพฯ ต่อรถกลับยะลา','ถึง กทม. ช่วงเช้า ต่อรถไฟนอนหรือรถทัวร์มุ่งหน้ากลับยะลา','1,050 กม. · 16-18 ชม.','t',[['kb']]]]},
+{d:3,w:'อา.',t:'ถึงบ้านที่ยะลา',sm:'🏠 ถึงบ้านประมาณ 09:00',s:[
+['09:00','เดินทางถึงบ้านที่ยะลา','เดินทางถึงบ้านโดยสวัสดิภาพ พักผ่อนพร้อมลุยงานต่อ','','g',[]]]}
+];
+
+const Place=({k,h,n})=>{
+ const p=P[k], tel=p[3], sm=[h?'เปิด '+h:'',n||'',tel].filter(Boolean).join(' · ');
+ return html`<div className="pl">
+  <div className="pn">${PI[p[0]]+' '+p[1]}${sm&&html`<small>${sm}</small>`}</div>
+  <div className="bs"><a className="bt m" href=${link(p)} target="_blank" rel="noopener noreferrer">🗺️ แผนที่</a>${tel&&html`<a className="bt" href=${'tel:'+tel.replace(/-/g,'')}>📞 โทร</a>`}</div>
+ </div>`;
+};
+const Stop=({s})=>{
+ const [t,ti,nt,dr,kd,pl]=s;
+ return html`<article className="stop" style=${{'--c':K[kd][1]}}>
+  <div className="tm">${'🕒 '+t+(dr?' · '+(kd==='t'?'🚆 ':'🚗 ขับ ')+dr:'')}</div>
+  <h3>${K[kd][0]+' '+ti}</h3>
+  <p className="nt">${nt}</p>
+  ${pl.map((p,i)=>html`<${Place} key=${i} k=${p[0]} h=${p[1]} n=${p[2]}/>`)}
+ </article>`;
+};
+const Day=({i,go})=>{
+ const D=DAYS[i], L=DAYS.length;
+ return html`<section>
+  <h2>${'วันที่ '+(i+1)+' · '+D.t}</h2>
+  <p className="sub">${D.w+' '+D.d+' '+mo(D.d)+' '+yr(D.d)}</p>
+  ${D.s.map((s,j)=>html`<${Stop} key=${j} s=${s}/>`)}
+  ${D.sl&&html`<div className="sl" style=${{'--c':K[D.sl[0]][1]}}>${K[D.sl[0]][0]+' คืนนี้: '+D.sl[1]}</div>`}
+  <div className="pg">
+   ${i>0?html`<button className="bt" onClick=${()=>go(i-1)}>◀ วันก่อนหน้า</button>`:html`<span/>`}
+   ${i<L-1?html`<button className="bt m" onClick=${()=>go(i+1)}>วันถัดไป ▶</button>`:html`<button className="bt" onClick=${()=>go(-1)}>🏠 กลับภาพรวม</button>`}
+  </div>
+ </section>`;
+};
+const Over=({go})=>html`<section>
+ <h2>ภาพรวมทริป</h2>
+ <p className="sub">แตะวันที่เพื่อดูรายละเอียด</p>
+ ${DAYS.map((D,i)=>html`<button key=${i} className="row" onClick=${()=>go(i)} style=${{'--c':D.sl?K[D.sl[0]][1]:K.g[1]}}>
+  <span className="dn"><b>${D.d}</b>${D.w+' '+mo(D.d)}</span>
+  <span className="rt"><b>${D.t}</b><small>${D.sl?K[D.sl[0]][0]+' '+D.sl[1]:D.sm}</small></span>
+  <span>›</span></button>`)}
+ <div className="ck"><h3>✅ ก่อนเดินทาง</h3><ul>
+  <li><b>จองลานกางเต็นท์ในอุทยาน</b> (ห้วยน้ำดัง · ดอยอินทนนท์ · ดอยสุเทพ-ปุย) ช่วงปีใหม่คนเยอะ ควรจองให้เร็ว ผ่านเว็บสำนักอุทยานแห่งชาติ <a href="https://nps.dnp.go.th" target="_blank" rel="noopener noreferrer">nps.dnp.go.th</a> หรือโทรเช็กกับอุทยานโดยตรง (เบอร์อยู่ในการ์ดแต่ละวัน)</li>
+  <li><b>ปางอุ๋ง · บ้านรักไทย</b> ติดต่อเจ้าของลานกางเต็นท์โดยตรง</li>
+  <li><b>ตั๋วรถไฟนอน</b> ซื้อผ่าน D-Ticket ของ รฟท. <a href="https://www.dticket.railway.co.th" target="_blank" rel="noopener noreferrer">dticket.railway.co.th</a> ขบวน 9 (กรุงเทพอภิวัฒน์ → เชียงใหม่ ออก 18:40 ถึงราว 07:15) ตรงกับตารางที่เช็กแล้ว ส่วนขบวนและเวลาของยะลา ⇄ กรุงเทพฯ กับเชียงใหม่ → กรุงเทพฯ ยังไม่ได้ยืนยัน เช็กตารางก่อนจอง</li>
+  <li><b>โรงแรมคืน 31 ธ.ค.</b> ยังไม่ได้เลือก ตัวเลือกอยู่ในหน้า 31 ธ.ค.</li>
+ </ul></div>
+</section>`;
+
+function App(){
+ const parse=()=>DAYS.findIndex(x=>'d'+x.d===location.hash.slice(1));
+ const [v,setV]=useState(parse);
+ useEffect(()=>{const f=()=>setV(parse());window.addEventListener('hashchange',f);return()=>window.removeEventListener('hashchange',f)},[]);
+ const go=i=>{
+  try{location.hash=i<0?'all':'d'+DAYS[i].d}catch(_){}
+  setV(i);
+  window.scrollTo({top:document.getElementById('wrap').offsetTop,behavior:'smooth'});
+ };
+ return html`<div className="wrap" id="wrap">
+  <nav className="nav">
+   <button className=${'nb'+(v<0?' on':'')} onClick=${()=>go(-1)}><b>🏠</b><span className="lb">ภาพรวม<small>สรุป + เช็กลิสต์</small></span></button>
+   ${DAYS.map((D,i)=>html`<button key=${i} className=${'nb'+(v===i?' on':'')} onClick=${()=>go(i)}><b>${D.d}</b><span className="lb">${D.w+' '+mo(D.d)}<small>${D.t}</small></span></button>`)}
+  </nav>
+  <main>
+   ${v<0?html`<${Over} go=${go}/>`:html`<${Day} i=${v} go=${go}/>`}
+   <p className="ft">ชื่อสถานที่ เบอร์โทร และเวลาเปิดมาจาก Google Maps (ตรวจเมื่อ 7 พ.ย. 69) ช่วงปีใหม่เวลาอาจเปลี่ยน ควรโทรเช็กก่อนไป</p>
+  </main>
+ </div>`;
+}
+ReactDOM.createRoot(document.getElementById('app')).render(html`<${App}/>`);
+</script>
+</body>
+</html>
